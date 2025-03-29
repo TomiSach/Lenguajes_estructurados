@@ -3,6 +3,8 @@
 #define TO_MILIMETERS 10
 #define TO_METERS 0.01
 
+void unitConverter();
+
 void clearScreen()
 {
     const char *CLEAR_SCREEN_ANSI = "\e[1;1H\e[2J";
