@@ -6,3 +6,5 @@ void cargarAsistencia(int matriz[3][5]);
 
 #endif
 
+extern const char* nombresTalleres[];
+extern const char* diasSemana[];
