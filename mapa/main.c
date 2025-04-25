@@ -5,18 +5,18 @@
 #define TALLERES 3
 #define DIAS 5
 
-// Nombres sin acentos ni eñes
+
 const char* nombresTalleres[] = {"Taller 1", "Taller 2", "Taller 3"};
 const char* diasSemana[] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes"};
 
-// Convierte una cadena a minusculas
+
 void toLowerCase(char* str) {
     for (int i = 0; str[i]; i++) {
         str[i] = tolower(str[i]);
     }
 }
 
-// Inicializa la matriz en 0
+
 void inicializarMatriz(int matriz[TALLERES][DIAS]) {
     for (int i = 0; i < TALLERES; i++) {
         for (int j = 0; j < DIAS; j++) {
@@ -25,7 +25,7 @@ void inicializarMatriz(int matriz[TALLERES][DIAS]) {
     }
 }
 
-// Devuelve el indice del dia (independiente de mayusculas)
+
 int obtenerIndiceDia(const char* diaInput) {
     char dia[20];
     strcpy(dia, diaInput);
@@ -42,7 +42,7 @@ int obtenerIndiceDia(const char* diaInput) {
     return -1;
 }
 
-// Devuelve el indice del taller (independiente de mayusculas)
+
 int obtenerIndiceTaller(const char* tallerInput) {
     char taller[20];
     strcpy(taller, tallerInput);
@@ -59,7 +59,7 @@ int obtenerIndiceTaller(const char* tallerInput) {
     return -1;
 }
 
-// Carga la asistencia en la posicion indicada
+
 void cargarAsistencia(int matriz[TALLERES][DIAS]) {
     char dia[20];
     char taller[20];
@@ -90,7 +90,7 @@ void cargarAsistencia(int matriz[TALLERES][DIAS]) {
     printf("Asistencia registrada.\n");
 }
 
-// Muestra toda la matriz
+
 void mostrarMatriz(int matriz[TALLERES][DIAS]) {
     printf("\nAsistencia:\n");
     printf("%-10s", "");
@@ -108,7 +108,7 @@ void mostrarMatriz(int matriz[TALLERES][DIAS]) {
     }
 }
 
-// Compara asistencia entre dos dias/talleres
+
 void compararAsistencia(int matriz[TALLERES][DIAS]) {
     char dia1[20], taller1[20];
     char dia2[20], taller2[20];
@@ -137,7 +137,7 @@ void compararAsistencia(int matriz[TALLERES][DIAS]) {
     printf("Asistencia en %s (%s): %d\n", taller2, dia2, matriz[f2][d2]);
 }
 
-// Reporta asistencia total de un dia
+
 void reportePorDia(int matriz[TALLERES][DIAS]) {
     char dia[20];
     printf("Ingrese el dia: ");
