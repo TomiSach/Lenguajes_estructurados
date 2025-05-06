@@ -33,7 +33,7 @@ int main() {
 
     } while (opcion == 's' || opcion == 'S');
 
-    printf("\nPrograma finalizado.\n");
+    
     return 0;
 }
 
